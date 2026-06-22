@@ -1,10 +1,10 @@
 import streamlit as st
 
 st.title("shayan")
-num1=st.number_input("enter first number")
-num2=st.number_input("enter your second number")
+num1=st.number_input("enter first number", step=1)
+num2=st.number_input("enter your second number", step=1)
 
-operation= st.selectboxint("choose operation",["+","-","*","/"])
+operation= st.selectbox("choose operation",["+","-","*","/"])
 if st.button("calculate"):
  if operation =="+":
     st.write(num1+num2)
